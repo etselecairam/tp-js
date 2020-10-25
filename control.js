@@ -6,7 +6,7 @@ var submit = document.getElementById('submit');
 form.onsubmit = function (e) {
     if (usuario.value === '' || clave.value === '') {
         e.preventDefault();
-        alert('Ninguno de los campos puede estar vacío.');
+        alert('Ninguno de los campos puede quedar vacío.');
         return;
     }
     if (!usuario.value.includes("@")) {
